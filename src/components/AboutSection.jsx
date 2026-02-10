@@ -1,5 +1,5 @@
 import React,{ useState} from 'react'
-import portfolio from '../assets/portfolio.png'
+import profileImg from '../assets/portfolio.png'
 import './aboutsection.css';
 import { motion } from 'framer-motion';
 import {GiClick} from "react-icons/gi" ;
@@ -98,7 +98,8 @@ export const AboutSection = () => {
         viewport={{once:true}}
         transition={{duration:1.5, type:"spring"}}
         className=' h-auto w-full md:w-1/2'>
-            <img src={portfolio} alt='my-porfile-picture'  className=' cursor-pointer h-auto w-full mx-auto md:w-4/6 duration-500 transition-all ease-in-out rounded-lg hover:scale-95'/>
+          <img src={profileImg} alt="Janette Mi portrait" className=' cursor-pointer h-auto w-full mx-auto md:w-4/6 duration-500 transition-all ease-in-out rounded-lg hover:scale-95'/>
+
         </motion.div>
         <motion.div 
         initial={{opacity:0, y:"70%"}}

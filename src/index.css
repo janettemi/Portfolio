@@ -1,0 +1,37 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* styles.css or your custom CSS file */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer utilities {
+  /* Custom scrollbar for WebKit browsers (Chrome, Safari, Edge) */
+  .scrollbar::-webkit-scrollbar {
+    width: 22px; /* Width of the scrollbar */
+  }
+
+  .scrollbar::-webkit-scrollbar-track {
+    background: #f1f1f1; /* Color of the track */
+    border-radius: 6px;
+  }
+
+  .scrollbar::-webkit-scrollbar-thumb {
+    background: limme; /* Color of the scrollbar thumb */
+    border-radius: 12px;
+    border: 3px solid transparent; /* Padding around the thumb */
+  }
+
+  .scrollbar::-webkit-scrollbar-thumb:hover {
+    background: darkblue; /* Color of the thumb on hover */
+    border-radius: 12px;
+  }
+
+  /* Custom scrollbar for Firefox */
+  .scrollbar {
+    scrollbar-width:thin; /* "auto" or "thin" */
+    scrollbar-color: lime transparent ; /* thumb and track color */
+  }
+}

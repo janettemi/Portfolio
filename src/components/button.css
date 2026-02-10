@@ -1,0 +1,108 @@
+.send-btn{
+    position: relative;
+    transition: .75s all ease-in-out;
+    color: lime;
+}
+.send-btn:hover{
+    background-color: lime;
+    color: black;
+    box-shadow: 0 0 5px lime,
+                0 0 25px lime,
+                0 0 50px lime;
+
+    /* box reflection */
+    /* -webkit-box-reflect: below 1px linear-gradient(transparent,#1f1e1e); */
+    
+}
+
+.send-btn span{
+    position: absolute;
+    /* display: block; */
+}
+
+.send-btn span:nth-child(1){
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 1px;
+    background: linear-gradient(90deg,transparent,lime);
+    animation: animate1 1s infinite;
+}
+
+.send-btn span:nth-child(2){
+    top: -100%;
+    right: 0;
+    width: 1px;
+    height: 100%;
+    background: linear-gradient(180deg,transparent,lime);
+    animation: animate2 1s infinite;
+    animation-delay: .20s;
+}
+
+.send-btn span:nth-child(3){
+    bottom: 0%;
+    right: 0;
+    width: 100%;
+    height: 1px;
+    background: linear-gradient(270deg,transparent,lime);
+    animation: animate3 1s infinite;
+    animation-delay: .45s;
+}
+
+.send-btn span:nth-child(4){
+    bottom: 0%;
+    left: 0;
+    width: 1px;
+    height: 100%;
+    background: linear-gradient(360deg,transparent,lime);
+    animation: animate4 1s infinite;
+    animation-delay: .70s;
+}
+
+@keyframes animate1 {
+    from{
+        left : 0%;
+        width: 100%;
+    }
+    to{
+        left:100% ;
+        width: 0%;
+    }
+    
+}
+
+@keyframes animate2 {
+    from{
+        top : 0% ;
+        height: 100%;
+    }
+    to{
+        top:100% ;
+        height: 0%;
+    }
+    
+}
+
+@keyframes animate3 {
+    from{
+        right : 0%;
+        width: 100%
+    }
+    to{
+        right:100%;
+        width: 0%;
+    }
+    
+}
+
+@keyframes animate4 {
+    0%{
+        bottom : 0%;
+        height: 100%;
+    }
+    100%{
+        bottom:100% ;
+        height: 0%;
+    }
+    
+}

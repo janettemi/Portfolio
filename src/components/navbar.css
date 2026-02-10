@@ -1,0 +1,18 @@
+.nav-items{
+    position: relative;
+}
+
+.nav-items::after{
+    content: '';
+    position: absolute;
+    height: 2px;
+    width: 0%;
+    background: linear-gradient(90deg , darkblue , lime);
+    left: 0;
+    bottom: -5px;
+    transition: all .25s ease-in-out;
+}
+
+.nav-items:hover::after{
+    width: 100%;
+}

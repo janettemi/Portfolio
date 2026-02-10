@@ -39,7 +39,7 @@ export const EmailSection = () => {
 
   const handleSubmit = (event)=>{
       event.preventDefault();
-      emailjs.sendForm( 'service_lnijlyj' ,'template_d9kephr' , form.current, 'GOJqISuGHm-9GaRXs')
+      emailjs.sendForm( 'service_g3h6tv4' ,'template_d9kephr' , form.current, 'GOJqISuGHm-9GaRXs')
       .then((result) => {
           console.log(result.text);
       }, (error) => {
